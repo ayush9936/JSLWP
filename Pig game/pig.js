@@ -15,23 +15,24 @@ let score;
 let currentScore;
 let activeplayer = 0;
 
-let playing = true;
+let playing ;
 
 //restart the game functionality
 const start = function () {
-    
+   playing=true; 
   score = [0, 0];
   currentScore = 0;
   score1.textContent = 0;
   score2.textContent = 0;
-  currentScore1.textContent = currentScore;
-  currentScore2.textContent = currentScore;
+  currentScore1.textContent = 0;
+  currentScore2.textContent = 0;
 
   dice1.classList.add("hidden");
   player1.classList.remove("player--winner");
   player2.classList.remove("player--winner");
   player1.classList.add("player--active");
   player2.classList.remove("player--active");
+  
 };
 start(); //call the function for reload page , it appear refresh
 
